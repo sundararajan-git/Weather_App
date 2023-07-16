@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: bolder;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+#container {
+  height: 100vh;
+  width: 100vw;
+  padding: 5%;
+  overflow: hidden;
+  position: relative;
+}
+.clouds {
+  background-image: url("https://i.pinimg.com/564x/88/48/ec/8848ec300e04b0133c669c85d7f5a6ec.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.clear {
+  background-image: url("https://wallpapersmug.com/download/1080x2160/1f027d/mountains-castle-sunset-horizon-art.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.haze {
+  background-image: url("https://i.pinimg.com/564x/cf/17/37/cf173710c222ee999c0ebc018ebdf88a.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rain {
+  background-image: url("https://i.pinimg.com/564x/7f/4a/0d/7f4a0d538e673ee0608daccf29b3b20f.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.snow {
+  background-image: url("https://i.pinimg.com/564x/28/3b/0c/283b0ca367c627608a01093053534c7a.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wind {
+  background-image: url("https://i.pinimg.com/564x/d0/8e/a6/d08ea62e666ec2564456d1f432d448a0.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.default {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 0, 95, 1) 100%
+  );
+}
+.header {
+  width: 100%;
+  display: flex;
+}
+.header input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px 7px gainsboro;
+}
+.header button {
+  margin-left: 5%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.header button:hover {
+  background-color: black;
+  color: white;
+}
+.content {
+  margin-top: 10%;
+  color: white;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+}
+.items p {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+}
+.p {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+#p {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 5px;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  color: white;
+  z-index: 9999;
+}
+i {
+  padding-right: 15px;
+}
+@media all and (min-width: 800px) {
+  #root {
+    margin: 5vh;
+  }
+  #container {
+    width: 60vw;
+    border-radius: 5px;
+    height: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
